@@ -1,4 +1,4 @@
-# Color Dairy
+# SNS-Firebase
 
 <!-- ! 플레이스토어 링크, 스크린샷 -->
 
