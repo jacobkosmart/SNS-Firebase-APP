@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Text("SNS with Firebase")
-        }
-        .padding()
-    }
+	
+	// property init StateObejct
+	@StateObject var vm: UserViewModel = UserViewModel()
+	
+	
+	var body: some View {
+		NavigationView {
+			LoginView()
+		}  //: NAVIGATION
+		.environmentObject(vm)
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {

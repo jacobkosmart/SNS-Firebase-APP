@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8144B82D298F2C330066057C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8144B82C298F2C330066057C /* FirebaseAuth */; };
 		8144B833298F2C9B0066057C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144B832298F2C9B0066057C /* LoginView.swift */; };
+		8144B835298F2D980066057C /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144B834298F2D980066057C /* UserViewModel.swift */; };
+		8144B838298F32470066057C /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144B837298F32470066057C /* ViewExtension.swift */; };
+		8144B83A298F374D0066057C /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8144B839298F374D0066057C /* RegisterView.swift */; };
 		81E83B87298E245700526190 /* SNS_Firebase_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E83B86298E245700526190 /* SNS_Firebase_AppApp.swift */; };
 		81E83B89298E245700526190 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E83B88298E245700526190 /* ContentView.swift */; };
 		81E83B8B298E245800526190 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81E83B8A298E245800526190 /* Assets.xcassets */; };
@@ -18,12 +21,15 @@
 
 /* Begin PBXFileReference section */
 		8144B832298F2C9B0066057C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		8144B834298F2D980066057C /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		8144B837298F32470066057C /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		8144B839298F374D0066057C /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		81E83B83298E245700526190 /* SNS-Firebase-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SNS-Firebase-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81E83B86298E245700526190 /* SNS_Firebase_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SNS_Firebase_AppApp.swift; sourceTree = "<group>"; };
 		81E83B88298E245700526190 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		81E83B8A298E245800526190 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81E83B8D298E245800526190 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		81E83B94298F284400526190 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "SNS-Firebase-App/APP/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		81E83B94298F284400526190 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "SNS-Firebase-App/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				8144B832298F2C9B0066057C /* LoginView.swift */,
+				8144B839298F374D0066057C /* RegisterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -49,6 +56,7 @@
 		8144B82F298F2C660066057C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				8144B834298F2D980066057C /* UserViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -64,10 +72,17 @@
 			isa = PBXGroup;
 			children = (
 				81E83B86298E245700526190 /* SNS_Firebase_AppApp.swift */,
-				81E83B94298F284400526190 /* GoogleService-Info.plist */,
 				81E83B88298E245700526190 /* ContentView.swift */,
 			);
 			path = APP;
+			sourceTree = "<group>";
+		};
+		8144B836298F322C0066057C /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				8144B837298F32470066057C /* ViewExtension.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 		81E83B7A298E245700526190 = {
@@ -93,7 +108,9 @@
 				8144B830298F2C6D0066057C /* Model */,
 				8144B82F298F2C660066057C /* ViewModel */,
 				8144B82E298F2C5B0066057C /* View */,
+				8144B836298F322C0066057C /* Extentions */,
 				81E83B8A298E245800526190 /* Assets.xcassets */,
+				81E83B94298F284400526190 /* GoogleService-Info.plist */,
 				81E83B8C298E245800526190 /* Preview Content */,
 			);
 			path = "SNS-Firebase-App";
@@ -185,8 +202,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8144B833298F2C9B0066057C /* LoginView.swift in Sources */,
+				8144B835298F2D980066057C /* UserViewModel.swift in Sources */,
 				81E83B89298E245700526190 /* ContentView.swift in Sources */,
+				8144B83A298F374D0066057C /* RegisterView.swift in Sources */,
 				81E83B87298E245700526190 /* SNS_Firebase_AppApp.swift in Sources */,
+				8144B838298F32470066057C /* ViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
